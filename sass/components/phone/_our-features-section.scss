@@ -1,5 +1,5 @@
 .our-features {
-  padding: 94px 0 47px;
+  padding: 60px 0;
 }
 .visually-hidden {
   @extend %visuallyHidden;
@@ -7,9 +7,6 @@
 
 .our-features-item {
   width: 100%;
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
 }
 .our-features-icon {
   @include centeredFlex;
@@ -27,6 +24,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-color;
@@ -38,4 +36,40 @@
   letter-spacing: 0.03em;
 
   color: $text-color;
+}
+
+@media screen and (max-width: 767px) {
+  .our-features-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .our-features-subtitle {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-features-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-features {
+    padding: 94px 0 47px;
+  }
+  .our-features-list {
+    display: flex;
+    // flex-wrap: no-wrap;
+  }
+  .our-features-item {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
 }
