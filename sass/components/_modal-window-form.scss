@@ -83,7 +83,7 @@
   }
 }
 .checkbox-input {
-  @extend %visualyHidden;
+  @extend %visuallyHidden;
 }
 
 .checkbox-input:checked + .form-checkbox-label::before {

@@ -18,46 +18,56 @@
             <div class="container">
                 <nav class="header-nav">
                     <a class="header-logo link" href="./index.html">Web<span class="logo-black">Studio</span></a>
-                    <ul class="header-list list">
-                        <li class="header-list-item">
-                            <a class="header-list-link link" href="./index.html">Студия</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a class="header-list-link link current" href="./portfolio.html">Портфолио</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a class="header-list-link link" href="">Контакты</a>
-                        </li>
-                    </ul>
+                    <button class="menu-button" type="button" data-menu-button aria-expanded="false"
+                        aria-controls="menu-container">
+                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="icon-cross" href="./images/icon/sprite-icon.svg#icon-cross"></use>
+                            <use class="icon-burger" href="./images/icon/sprite-icon.svg#icon-burger"></use>
+                        </svg>
+                    </button>
+                    <div class="menu-container" id=menu-container data-menu>
+                        <ul class="header-list list">
+                            <li class="header-list-item">
+                                <a class="header-list-link link" href="./index.html">Студия</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a class="header-list-link link current" href="./portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a class="header-list-link link" href="">Контакты</a>
+                            </li>
+                        </ul>
+
+                        <address class="address">
+                            <ul class="header-contacts-list list">
+                                <li class="header-contacts-mail">
+                                    <a class="header-contacts-link link" href="mailto:info@devstudio.com">
+                                        <svg class="icon-mail">
+                                            <use href="./images/icon/sprite-icon.svg#icon-mail"></use>
+                                        </svg>
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                                <li class="header-contacts-phone">
+                                    <a class="header-contacts-link link" href="tel:+380961111111">
+                                        <svg class="icon-phone">
+                                            <use href="./images/icon/sprite-icon.svg#icon-phone"></use>
+                                        </svg>
+                                        +38 096 111 11 11
+                                    </a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
                 </nav>
-                <address class="address">
-                    <ul class="header-contacts-list list">
-                        <li class="header-contacts-mail">
-                            <a class="header-contacts-link link" href="mailto:info@devstudio.com">
-                                <svg class="icon-mail">
-                                    <use href="./images/icon/sprite-icon.svg#icon-mail"></use>
-                                </svg>
-                                info@devstudio.com
-                            </a>
-                        </li>
-                        <li class="header-contacts-phone">
-                            <a class="header-contacts-link link" href="tel:+380961111111">
-                                <svg class="icon-phone">
-                                    <use href="./images/icon/sprite-icon.svg#icon-phone"></use>
-                                </svg>
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                    </ul>
-                </address>
             </div>
         </header>
         <main>
-            <section class="our-project">
+            <!-- <section class="our-project">
                 <div class="container">
-                    <h1 class="visually-hidden">Список наших работ</h1>
+                    <h1 class="visually-hidden">Список наших работ</h1> -->
                     <!-- FILTER -->
-                    <div class="filter">
+                    <!-- <div class="filter">
                         <ul class="filter-list list">
                             <li class="filter-list-item">
                                 <button class="filter-list-button" type="button">Все</button>
@@ -75,9 +85,9 @@
                                 <button class="filter-list-button" type="button">Маркетинг</button>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                     <!-- PORTFOLIO -->
-                    <div class="portfolio">
+                    <!-- <div class="portfolio">
                         <ul class="portfolio-list list">
                             <li class="portfolio-list-item">
                                 <a class="portfolio-list-link link" href="">
@@ -255,12 +265,12 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </section>
         </main>
         <!-- FOOTER -->
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container">
                 <div class="footer-contacts">
                     <a class="footer-logo link" href="./index.html">Web<span class="logo-white">Studio</span></a>
@@ -326,18 +336,8 @@
                     </div>
                 </form>
             </div>
-        </footer>
-        <script>
-            (() => {
-                document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-                    e.preventDefault();
-
-                    new FormData(e.currentTarget).forEach((value, name) =>
-                        console.log(`${name}: ${value}`),
-                    );
-                });
-            })();
-        </script>
+        </footer> -->
+        <script src="./js/menu.js"></script>
     </body>
 
     </html>
