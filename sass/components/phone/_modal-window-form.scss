@@ -1,7 +1,7 @@
 .form-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
@@ -72,8 +72,8 @@
   align-items: center;
   &::before {
     content: '';
-    width: 16px;
-    height: 15px;
+    min-width: 16px;
+    min-height: 15px;
     margin-right: 8px;
     cursor: pointer;
     background-color: #ffffff;
@@ -95,16 +95,16 @@
 }
 .form-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
 
   color: $text-color;
 }
 .contract {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: $title-color;
   transition: $transition;
@@ -113,7 +113,6 @@
     color: $accent-color;
   }
 }
-
 .submit-btn {
   display: block;
   margin: 0 auto;
@@ -134,5 +133,16 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-title {
+    line-height: 1.15;
+  }
+  .form-text,
+  .contract {
+    font-size: 14px;
+    line-height: 1.714;
   }
 }
