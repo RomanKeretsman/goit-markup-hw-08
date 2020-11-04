@@ -14,8 +14,7 @@
 }
 .modal-body {
   @include centeredFlex();
-  min-height: 100%;
-  padding: 20px 10px;
+  padding: 94px 15px;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -28,8 +27,8 @@
 }
 .modal-content {
   position: relative;
-  max-width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   padding: 40px;
   opacity: 1;
 
@@ -59,7 +58,19 @@
   }
 }
 .close-icon {
-    width: 18px;
-    height: 18px;
-  }
+  width: 18px;
+  height: 18px;
+}
 
+@media screen and (min-width: 768px) {
+  .modal-body {
+    min-height: 100%;
+    padding: 20px 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-content {
+    width: 528px;
+    min-height: 581px;
+  }
+}
