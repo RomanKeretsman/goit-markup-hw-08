@@ -1,5 +1,5 @@
 .team {
-  padding: 94px 0;
+  padding: 60px 0;
   background: #f5f4fa;
 }
 
@@ -7,15 +7,11 @@
   margin-bottom: 30px;
 }
 .team-list-item {
-  padding-bottom: 30px;
-  width: 270px;
+  padding-bottom: 24px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 .team-name {
   font-weight: 500;
@@ -24,7 +20,6 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-
   color: $title-color;
 }
 .team-position {
@@ -63,4 +58,37 @@
 .social-icon {
   width: 20px;
   height: 20px;
+}
+@media screen and (max-width: 767px) {
+  .team-list-item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .team-list-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: -15px;
+  }
+  .team-list-item {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+    padding-bottom: 30px;
+  }
 }

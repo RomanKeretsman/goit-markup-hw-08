@@ -311,6 +311,11 @@ img {
   .menu-button {
     display: none;
   }
+  .header-contacts-list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .header-contacts-link {
     font-size: 12px;
   }

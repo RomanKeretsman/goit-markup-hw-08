@@ -128,23 +128,37 @@
                 <ul class="work-list list">
                     <li class="work-list-item">
                         <div class="work-overlay">
-                            <img class="work-list-img" src="./images/studio/features/features_pc_1.jpg"
-                                alt="Написание кода на десктопе" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/studio/features/features-desktop-1.jpg 1x,
+                                    ./images/studio/features/features-desktop-1@2x.jpg 2x,
+                                    ./images/studio/features/features-desktop-1@3x.jpg 3x">
+                                <img class="work-list-img" src="./images/studio/features/features-desktop-1.jpg"
+                                    alt="Написание кода на десктопе">
+                            </picture>
                             <p class="work-title">Десктопные приложения</p>
                         </div>
-
                     </li>
                     <li class="work-list-item">
                         <div class="work-overlay">
-                            <img class="work-list-img" src="./images/studio/features/features_pc_2.jpg"
-                                alt="Структура приложения для мобильного устройства" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/studio/features/features-desktop-2.jpg 1x,
+                                       ./images/studio/features/features-desktop-2@2x.jpg 2x,
+                                       ./images/studio/features/features-desktop-2@3x.jpg 3x">
+                                <img class="work-list-img" src="./images/studio/features/features-desktop-2.jpg"
+                                    alt="Структура приложения для мобильного устройства">
+                            </picture>
                             <p class="work-title">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="work-list-item">
                         <div class="work-overlay">
-                            <img class="work-list-img" src="./images/studio/features/features_pc_3.jpg"
-                                alt="Палитра цветов на планшете" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/studio/features/features-desktop-3.jpg 1x,
+                                       ./images/studio/features/features-desktop-3@2x.jpg 2x,
+                                       ./images/studio/features/features-desktop-3@3x.jpg 3x">
+                                <img class="work-list-img" src="./images/studio/features/features-desktop-3.jpg"
+                                    alt="Палитра цветов на планшете">
+                            </picture>
                             <p class="work-title">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -152,13 +166,24 @@
             </div>
         </section>
         <!-- TEAM -->
-        <!-- <section class="team">
+        <section class="team">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list-item">
-                        <img class="team-img" src="./images/studio/team_member_1.jpg" alt="Фото Игоря Демьяненко"
-                            width="270" height="260">
+                        <picture>
+                            <source
+                                srcset="./images/studio/team/team-img-desktop-1.jpg 1x, ./images/studio/team/team-img-desktop-1@2x.jpg 2x, ./images/studio/team/team-img-desktop-1@3x.jpg 3x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/studio/team/team-img-tablet-1.jpg
+                                1x, ./images/studio/team/team-img-tablet-1@2x.jpg
+                                2x, ./images/studio/team/team-img-tablet-1@3x.jpg 3x" media="(min-width: 768px)">
+                            <source srcset="./images/studio/team/team-img-mobile-1.jpg
+                                1x, ./images/studio/team/team-img-mobile-1@2x.jpg
+                                2x, ./images/studio/team/team-img-mobile-1@3x.jpg 3x" media="(max-width: 767px)">
+                            <img class="team-img" src="./images/studio/team/team-img-mobile-1.jpg"
+                                alt="Фото Игоря Демьяненко">
+                        </picture>
                         <h3 class="team-name">Игорь Демьяненко</h3>
                         <p class="team-position" lang="en">Product Designer</p>
                         <ul class="social list">
@@ -193,8 +218,19 @@
                         </ul>
                     </li>
                     <li class="team-list-item">
-                        <img class="team-img" src="./images/studio/team_member_2.jpg" alt="Фото Ольги Репиной"
-                            width="270" height="260">
+                        <picture>
+                            <source
+                                srcset="./images/studio/team/team-img-desktop-2.jpg 1x, ./images/studio/team/team-img-desktop-2@2x.jpg 2x, ./images/studio/team/team-img-desktop-2@3x.jpg 3x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/studio/team/team-img-tablet-2.jpg
+                                1x, ./images/studio/team/team-img-tablet-2@2x.jpg
+                                2x, ./images/studio/team/team-img-tablet-2@3x.jpg 3x" media="(min-width: 768px)">
+                            <source srcset="./images/studio/team/team-img-mobile-2.jpg
+                                1x, ./images/studio/team/team-img-mobile-2@2x.jpg
+                                2x, ./images/studio/team/team-img-mobile-2@3x.jpg 3x" media="(max-width: 767px)">
+                            <img class="team-img" src="./images/studio/team/team-img-mobile-2.jpg"
+                                alt="Фото Ольги Репиной">
+                        </picture>
                         <h3 class="team-name">Ольга Репина</h3>
                         <p class="team-position" lang="en">Frontend Developer</p>
                         <ul class="social list">
@@ -229,8 +265,19 @@
                         </ul>
                     </li>
                     <li class="team-list-item">
-                        <img class="team-img" src="./images/studio/team_member_3.jpg" alt="Фото Николая Тарасова"
-                            width="270" height="260">
+                        <picture>
+                            <source
+                                srcset="./images/studio/team/team-img-desktop-3.jpg 1x, ./images/studio/team/team-img-desktop-3@2x.jpg 2x, ./images/studio/team/team-img-desktop-3@3x.jpg 3x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/studio/team/team-img-tablet-3.jpg
+                                1x, ./images/studio/team/team-img-tablet-3@2x.jpg
+                                2x, ./images/studio/team/team-img-tablet-3@3x.jpg 3x" media="(min-width: 768px)">
+                            <source srcset="./images/studio/team/team-img-mobile-3.jpg
+                                1x, ./images/studio/team/team-img-mobile-3@2x.jpg
+                                2x, ./images/studio/team/team-img-mobile-3@3x.jpg 3x" media="(max-width: 767px)">
+                            <img class="team-img" src="./images/studio/team/team-img-mobile-3.jpg"
+                                alt="Фото Николая Тарасова">
+                        </picture>
                         <h3 class="team-name">Николай Тарасов</h3>
                         <p class="team-position" lang="en">Marketing</p>
                         <ul class="social list">
@@ -265,8 +312,19 @@
                         </ul>
                     </li>
                     <li class="team-list-item">
-                        <img class="team-img" src="./images/studio/team_member_4.jpg" alt="Фото Михаила Ермакова"
-                            width="270" height="260">
+                        <picture>
+                            <source
+                                srcset="./images/studio/team/team-img-desktop-4.jpg 1x, ./images/studio/team/team-img-desktop-4@2x.jpg 2x, ./images/studio/team/team-img-desktop-4@3x.jpg 3x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/studio/team/team-img-tablet-4.jpg
+                                1x, ./images/studio/team/team-img-tablet-4@2x.jpg
+                                2x, ./images/studio/team/team-img-tablet-4@3x.jpg 3x" media="(min-width: 768px)">
+                            <source srcset="./images/studio/team/team-img-mobile-4.jpg
+                                1x, ./images/studio/team/team-img-mobile-4@2x.jpg
+                                2x, ./images/studio/team/team-img-mobile-4@3x.jpg 3x" media="(max-width: 767px)">
+                            <img class="team-img" src="./images/studio/team/team-img-mobile-4.jpg"
+                                alt="Фото Михаила Ермакова">
+                        </picture>
                         <h3 class="team-name">Михаил Ермаков</h3>
                         <p class="team-position" lang="en">UI Designer</p>
                         <ul class="social list">
@@ -302,7 +360,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!--CUSTOMERS -->
         <section class="customers">
             <div class="container ">
