@@ -1,16 +1,18 @@
 .our-project {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 .visually-hidden {
   @extend %visuallyHidden;
 }
+.filter {
+  margin-bottom: 40px;
+}
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
-  margin-bottom: 50px;
+  margin-right: -8px;
 }
-.filter-list-item:not(:last-child) {
+.filter-list-item {
   margin-right: 8px;
 }
 .filter-list-button {
@@ -36,9 +38,27 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
+@media screen and (max-width: 767px) {
+  .filter-list {
+    margin-bottom: -15px;
+  }
+  .filter-list-item {
+    margin-bottom: 15px;
+  }
+}
 @media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+  }
   .filter-list {
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-project {
+    padding: 94px 0;
+  }
+  .filter {
     margin-bottom: 50px;
   }
 }

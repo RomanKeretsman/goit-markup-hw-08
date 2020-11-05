@@ -1,12 +1,9 @@
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
   margin: -15px;
 }
 .portfolio-list-item {
   box-sizing: border-box;
   justify-content: center;
-  width: 370px;
   margin: 15px;
   background: #ffffff;
   transition: $transition;
@@ -42,7 +39,6 @@
   overflow-y: auto;
 }
 .portfolio-card-box {
-  width: 370px;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -62,4 +58,23 @@
   line-height: 1.876;
   letter-spacing: 0.03em;
   color: $text-color;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio-list-item {
+    width: calc((100% - 4 * 15px) / 2);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-title {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list-item {
+    width: calc((100% - 6 * 15px) / 3);
+  }
 }
